@@ -11,5 +11,5 @@ letter-spacing<br>
 :hover<br>
 transform: scale(2.0);/*enlarge 2x*/<br>
 transition: 2s ease-out;/*play effect 2s*/<br>
-@media screen and (max-width: 800px){.column{flex:50%;max-width:50%}}/*Media queries*/<br>
+@media screen and (max-width: 800px){.column{flex:50%;max-width:50%}}/*Media queries. If the screen max-width smaller than 800px, .column would be 1/2 of the screen.*/<br>
 
