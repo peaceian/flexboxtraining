@@ -9,7 +9,7 @@
         *{box-sizing: border-box;}
         body {margin: 0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
         header,footer {text-align: center;padding: 20px;letter-spacing: 3px;font-size: larger;}
-        .row {display: flex;flex-wrap: wrap;padding: 0 4px;}/*必要*/
+        .row {display: flex;flex-wrap: wrap;padding: 0 4px;}/*必要，flex-wrap由上往下*/
         .column {flex: 25%;max-width: 25%;padding: 0 4px;}/*flex是伸展比例*/
         .column img {margin-top: 4px;vertical-align: middle;margin-bottom: 4px;overflow:hidden ;max-height:fit-content;}
         .column img:hover {transform: scale(2.0);transition: 2s ease-out;border-radius: 50%;}
@@ -27,7 +27,7 @@
         
     </header>
     <div class="row"><!--父容器有flex，子容器才能用column排-->
-        <div class="column">
+        <div class="column"><!--由上往下-->
             <img src="https://picsum.photos/600/522?random=1" width="100%">
             <img src="https://picsum.photos/500/553?random=2" width="100%">
             <img src="https://picsum.photos/620/700?random=3" width="100%">
