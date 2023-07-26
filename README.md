@@ -7,6 +7,9 @@ margin<br>
 padding<br>
 letter-spacing<br>
 .row {display:flex;flex-wrap:wrap;}/*declare the flex layout*/<br>
-.column {flex:25%;max-width:25%;}/*declare the .column container is the 1/4 of screen.*/
-
+.column {flex:25%;max-width:25%;}/*declare the .column container is 1/4 of the screen.*/
+:hover<br>
+transform:scale(2.0);/*enlarge 2x*/<br>
+transition:2s ease-out;/*play effect 2s*/<br>
+@media screen and (max-width:800px){.column{flex:50%;max-width:50%}}/*Media queries*/<br>
 
